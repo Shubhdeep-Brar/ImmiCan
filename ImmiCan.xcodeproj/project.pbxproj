@@ -18,6 +18,7 @@
 		04BE9CE329567FEC0079FBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BE9CE229567FEC0079FBA3 /* Assets.xcassets */; };
 		04BE9CE629567FEC0079FBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BE9CE429567FEC0079FBA3 /* LaunchScreen.storyboard */; };
 		7A0E95572971009300C62C5B /* ViewControllerSelectProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E95562971009300C62C5B /* ViewControllerSelectProvince.swift */; };
+		FB55D663297F9413004B8352 /* Sin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55D662297F9413004B8352 /* Sin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		04BE9CE529567FEC0079FBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BE9CE729567FEC0079FBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A0E95562971009300C62C5B /* ViewControllerSelectProvince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSelectProvince.swift; sourceTree = "<group>"; };
+		FB55D662297F9413004B8352 /* Sin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				04BE9CE729567FEC0079FBA3 /* Info.plist */,
 				04904B43295E955700E8750B /* forgetPassViewcontroller.swift */,
 				04BE813D296EAB6100E86ABB /* GoogleService-Info.plist */,
+				FB55D662297F9413004B8352 /* Sin.swift */,
 			);
 			path = ImmiCan;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				04BE9CDA29567FEB0079FBA3 /* AppDelegate.swift in Sources */,
 				04904B44295E955700E8750B /* forgetPassViewcontroller.swift in Sources */,
 				04BE9CDC29567FEB0079FBA3 /* SceneDelegate.swift in Sources */,
+				FB55D663297F9413004B8352 /* Sin.swift in Sources */,
 				049051AF296A752300FCF4E3 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
