@@ -71,7 +71,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="341" height="130.66666666666666"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-Sq-x8z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="341" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="341" height="55.666666666666664"/>
                                                         <color key="backgroundColor" red="1" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="341" id="bI1-lR-qjX"/>
@@ -93,7 +93,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjM-98-XIX">
-                                                        <rect key="frame" x="0.0" y="74.999999999999943" width="341" height="55.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="75.666666666666686" width="341" height="55"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="341" id="9Zd-RC-8zH"/>
                                                             <constraint firstAttribute="height" constant="55" id="qDF-1i-yBy"/>
@@ -443,9 +443,6 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="NEy-Lc-jaS" kind="show" id="bVb-xH-NUT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AfT-kp-GEy"/>
@@ -715,6 +712,68 @@
             </objects>
             <point key="canvasLocation" x="4607.6923076923076" y="711.61137440758296"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rS5-lu-AqF">
+            <objects>
+                <viewController id="QSm-qj-njS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r8H-za-nUu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jK5-5Q-OEW" customClass="Sin" customModule="ImmiCan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL INSURANCE NUMBER " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-xR-1jY">
+                                        <rect key="frame" x="8" y="481" width="237" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tz-rV-ykO">
+                                        <rect key="frame" x="8" y="510" width="374" height="237"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">A 9 digit private number which is essential to work  in  Canada or to access government program and benefits.  Service Canada, goveronment body is  responsible for issuing sin numbers to applicants.
+
+
+Tap below to apply for sin and to 
+get more information on sin.
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uB-os-i0X">
+                                        <rect key="frame" x="152" y="755" width="93" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sin image" translatesAutoresizingMaskIntoConstraints="NO" id="sEZ-Lm-o0j">
+                                        <rect key="frame" x="28" y="112" width="334" height="341"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G18-aN-Vjz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qnj-12-KSD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVo-lF-Tr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="oLy-YS-BEP" customClass="Sin" customModule="ImmiCan" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="fys-Gg-uag"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="5504.6153846153848" y="728.67298578199052"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lOW-lh-vmC">
             <objects>
@@ -741,6 +800,7 @@
         <image name="Logo" width="242" height="277"/>
         <image name="facebookLogo" width="33" height="26"/>
         <image name="googleLogo" width="30" height="33"/>
+        <image name="sin image" width="640" height="640"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
