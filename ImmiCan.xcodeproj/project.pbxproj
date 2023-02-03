@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040B76B4297F8520006DB564 /* provincialIdHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B76B3297F8520006DB564 /* provincialIdHandler.swift */; };
 		04904B44295E955700E8750B /* forgetPassViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04904B43295E955700E8750B /* forgetPassViewcontroller.swift */; };
 		049051AF296A752300FCF4E3 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049051AE296A752300FCF4E3 /* loginViewController.swift */; };
 		049051B1296A771400FCF4E3 /* createAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049051B0296A771400FCF4E3 /* createAccountViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040B76B3297F8520006DB564 /* provincialIdHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = provincialIdHandler.swift; sourceTree = SOURCE_ROOT; };
 		04904B43295E955700E8750B /* forgetPassViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPassViewcontroller.swift; sourceTree = "<group>"; };
 		049051AE296A752300FCF4E3 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		049051B0296A771400FCF4E3 /* createAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				04BE9CE729567FEC0079FBA3 /* Info.plist */,
 				04904B43295E955700E8750B /* forgetPassViewcontroller.swift */,
 				04BE813D296EAB6100E86ABB /* GoogleService-Info.plist */,
+				040B76B3297F8520006DB564 /* provincialIdHandler.swift */,
 			);
 			path = ImmiCan;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				7A60BF5D2988C68C008FF92D /* Banking.swift in Sources */,
 				04904B44295E955700E8750B /* forgetPassViewcontroller.swift in Sources */,
 				04BE9CDC29567FEB0079FBA3 /* SceneDelegate.swift in Sources */,
+				040B76B4297F8520006DB564 /* provincialIdHandler.swift in Sources */,
 				049051AF296A752300FCF4E3 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
