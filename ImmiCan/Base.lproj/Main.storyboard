@@ -374,7 +374,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="I5Q-T0-akv" id="ZrA-lR-sVf"/>
                         <outlet property="passwordTextField" destination="hIF-GA-ykx" id="CBl-7u-ZfS"/>
-                        <segue destination="WR4-g5-9zy" kind="show" identifier="goToHomePage" id="7d9-bA-Z3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajf-B4-CDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -443,6 +442,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="WR4-g5-9zy" kind="show" id="Int-x1-gbF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AfT-kp-GEy"/>
@@ -463,93 +465,46 @@
             </objects>
             <point key="canvasLocation" x="4512.3076923076924" y="-49.052132701421797"/>
         </scene>
-        <!--View Controller Select Province-->
-        <scene sceneID="EzR-Hs-mEE">
+        <!--Select Province Picker-->
+        <scene sceneID="Ihe-uS-hiG">
             <objects>
-                <viewController id="NEy-Lc-jaS" customClass="ViewControllerSelectProvince" customModule="ImmiCan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kg0-U8-5h6">
+                <viewController id="cfh-c4-3Fd" customClass="SelectProvincePicker" customModule="ImmiCan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsf-Lp-Q8o">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-wS-hL7">
-                                <rect key="frame" x="33" y="398" width="325" height="218"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-aJ-J9u">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="325" id="XHQ-Ys-H9e"/>
-                                            <constraint firstAttribute="height" constant="48" id="ixc-g5-uxn"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Select Province">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                            <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectProvinceButton:" destination="NEy-Lc-jaS" eventType="touchUpInside" id="Omg-os-NjY"/>
-                                        </connections>
-                                    </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NyY-ug-AmG">
-                                        <rect key="frame" x="0.0" y="48" width="325" height="170"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="170" id="Rl6-MW-UJg"/>
-                                        </constraints>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="KBd-Lj-RL4" style="IBUITableViewCellStyleDefault" id="csM-gW-Sjh">
-                                                <rect key="frame" x="0.0" y="50" width="325" height="43.666667938232422"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="csM-gW-Sjh" id="OT1-1t-osJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KBd-Lj-RL4">
-                                                            <rect key="frame" x="20" y="0.0" width="285" height="43.666667938232422"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="NEy-Lc-jaS" id="113-Lc-GLa"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your Province below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVz-OJ-YYz">
-                                <rect key="frame" x="33" y="322" width="325" height="45"/>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iW7-9b-4Vh">
+                                <rect key="frame" x="0.0" y="341" width="390" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.55294120309999995" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your Province below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-05-L7c">
+                                <rect key="frame" x="33" y="273" width="325" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Province: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-7q-FOV">
+                                <rect key="frame" x="53" y="654" width="76" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="QKt-ga-HkW"/>
-                        <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="LqR-wS-hL7" secondAttribute="bottom" constant="228" id="648-hh-eKe"/>
-                            <constraint firstAttribute="trailing" secondItem="LqR-wS-hL7" secondAttribute="trailing" constant="32" id="YLE-cH-jFB"/>
-                            <constraint firstItem="LqR-wS-hL7" firstAttribute="top" secondItem="kg0-U8-5h6" secondAttribute="top" constant="398" id="prt-8L-vUB"/>
-                            <constraint firstItem="LqR-wS-hL7" firstAttribute="leading" secondItem="kg0-U8-5h6" secondAttribute="leading" constant="33" id="sQa-7M-eSZ"/>
-                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TUd-Ra-dae"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.55294120309999995" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Oy4-O6-BQL"/>
+                    <navigationItem key="navigationItem" id="mTl-Gk-YSB"/>
                     <connections>
-                        <outlet property="selectedProvince" destination="ypp-aJ-J9u" id="88f-l6-BLy"/>
-                        <outlet property="tblView" destination="NyY-ug-AmG" id="itF-ht-GXX"/>
+                        <outlet property="pickerView" destination="iW7-9b-4Vh" id="ShI-3r-5TE"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="koP-hj-fX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRq-a1-573" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5380" y="-48.341232227488149"/>
+            <point key="canvasLocation" x="5280" y="-49"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="CBe-wL-z1x">
@@ -680,7 +635,6 @@
                         <outlet property="emailText" destination="Hfm-Zf-xtK" id="gfs-pA-IbU"/>
                         <outlet property="passwordText" destination="2nW-cP-yiP" id="dF6-No-rZi"/>
                         <outlet property="username" destination="D4J-OJ-u3v" id="nvB-Bd-vgH"/>
-                        <segue destination="WR4-g5-9zy" kind="show" identifier="goToHomePage" id="ePc-gU-9ua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dba-wX-KJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -713,66 +667,151 @@
             <point key="canvasLocation" x="4607.6923076923076" y="711.61137440758296"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="rS5-lu-AqF">
+        <scene sceneID="gPj-Zq-xfj">
             <objects>
-                <viewController id="QSm-qj-njS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="r8H-za-nUu">
+                <viewController id="7J0-Ff-7iB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7r-Zl-q8h">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jK5-5Q-OEW" customClass="Sin" customModule="ImmiCan" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5X1-MR-b1C" customClass="HealthCare" customModule="ImmiCan" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL INSURANCE NUMBER " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-xR-1jY">
-                                        <rect key="frame" x="8" y="481" width="237" height="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCb-pE-tv5">
+                                        <rect key="frame" x="36" y="486" width="322" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tz-rV-ykO">
-                                        <rect key="frame" x="8" y="510" width="374" height="237"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">A 9 digit private number which is essential to work  in  Canada or to access government program and benefits.  Service Canada, goveronment body is  responsible for issuing sin numbers to applicants.
-
-
-Tap below to apply for sin and to 
-get more information on sin.
-</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Healthcare in Canada is delivered through 
+the provincial and territorial systems of
+publicly funded healthcare, informally 
+called Medicare. </string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uB-os-i0X">
-                                        <rect key="frame" x="152" y="755" width="93" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-s8-KNg">
+                                        <rect key="frame" x="36" y="590" width="318" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Each provincial health insurance plan covers medically necessary hospital and doctors' services that are provided on a pre-paid basis,
+without direct charges at the point of 
+service.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Immi Can" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s83-9g-NiX">
+                                        <rect key="frame" x="175" y="779" width="45" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vecteezy_medical-center-hospital-building-vector-design_" translatesAutoresizingMaskIntoConstraints="NO" id="OSw-0r-QOR">
+                                        <rect key="frame" x="18" y="92" width="354" height="340"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0W-5J-Fm6">
+                                        <rect key="frame" x="36" y="457" width="111" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">HEALTH CARE
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ju-EN-5zg">
+                                        <rect key="frame" x="36" y="715" width="318" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Apply">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sin image" translatesAutoresizingMaskIntoConstraints="NO" id="sEZ-Lm-o0j">
-                                        <rect key="frame" x="28" y="112" width="334" height="341"/>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pmk-UM-ROD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hoj-Pv-dfL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZX-gQ-aVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5380" y="711.61137440758296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k1a-sM-YXB">
+            <objects>
+                <viewController id="f9n-2z-2Z4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vVO-fy-NlT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qlp-GT-KYQ" customClass="Banking" customModule="ImmiCan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSf-Iv-9t3">
+                                        <rect key="frame" x="30" y="503" width="331" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">New immigrants to Canada need banking services to manage their finances and settle into their new life. This includes opening a bank account to receive income, access to ATMs and debit cards for everyday transactions, and options for transferring funds from their home country. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-xv-T7d">
+                                        <rect key="frame" x="30" y="626" width="331" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Establishing a relationship with a Canadian bank can also help in building a credit history, which is important for future financial needs like obtaining a loan or renting an apartment.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-Y7-3kd">
+                                        <rect key="frame" x="30" y="738" width="331" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Nearby Banks">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Immi Can" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-EZ-jTD">
+                                        <rect key="frame" x="173" y="798" width="45" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Banking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tG1-sx-cqs">
+                                        <rect key="frame" x="30" y="471" width="100" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Banking" translatesAutoresizingMaskIntoConstraints="NO" id="yPg-17-gfB">
+                                        <rect key="frame" x="8" y="74" width="382" height="285"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="G18-aN-Vjz"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4ps-iC-Mdr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qnj-12-KSD"/>
+                    <navigationItem key="navigationItem" id="zoR-6I-UYP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CVo-lF-Tr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="oLy-YS-BEP" customClass="Sin" customModule="ImmiCan" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="safeArea" id="fys-Gg-uag"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5m5-si-EwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5504.6153846153848" y="728.67298578199052"/>
+            <point key="canvasLocation" x="5380" y="1388.3886255924169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lOW-lh-vmC">
@@ -793,14 +832,12 @@ get more information on sin.
             <point key="canvasLocation" x="1906.1538461538462" y="-2.1327014218009479"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7d9-bA-Z3h"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="Banking" width="1920" height="1920"/>
         <image name="Logo" width="242" height="277"/>
         <image name="facebookLogo" width="33" height="26"/>
         <image name="googleLogo" width="30" height="33"/>
-        <image name="sin image" width="640" height="640"/>
+        <image name="vecteezy_medical-center-hospital-building-vector-design_" width="1920" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
