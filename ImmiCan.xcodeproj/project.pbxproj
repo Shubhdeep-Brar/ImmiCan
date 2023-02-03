@@ -22,6 +22,7 @@
 		7A13BB3C297F9B1100BA8A0C /* HealthCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13BB3B297F9B1100BA8A0C /* HealthCareViewController.swift */; };
 		7A60BF5D2988C68C008FF92D /* Banking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60BF5C2988C68C008FF92D /* Banking.swift */; };
 		7A60BF5F298A13F8008FF92D /* SelectProvincePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60BF5E298A13F8008FF92D /* SelectProvincePicker.swift */; };
+		FB669E45298CC8290029FF07 /* Sin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB669E44298CC8290029FF07 /* Sin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7A13BB3B297F9B1100BA8A0C /* HealthCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareViewController.swift; sourceTree = "<group>"; };
 		7A60BF5C2988C68C008FF92D /* Banking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking.swift; sourceTree = "<group>"; };
 		7A60BF5E298A13F8008FF92D /* SelectProvincePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProvincePicker.swift; sourceTree = "<group>"; };
+		FB669E44298CC8290029FF07 /* Sin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		04BE9CD829567FEB0079FBA3 /* ImmiCan */ = {
 			isa = PBXGroup;
 			children = (
+				FB669E44298CC8290029FF07 /* Sin.swift */,
 				04BE9CD929567FEB0079FBA3 /* AppDelegate.swift */,
 				04BE9CDB29567FEB0079FBA3 /* SceneDelegate.swift */,
 				04BE9CDD29567FEB0079FBA3 /* ViewController.swift */,
@@ -89,7 +92,6 @@
 				04BE9CE729567FEC0079FBA3 /* Info.plist */,
 				04904B43295E955700E8750B /* forgetPassViewcontroller.swift */,
 				04BE813D296EAB6100E86ABB /* GoogleService-Info.plist */,
-				FB55D662297F9413004B8352 /* Sin.swift */,
 				040B76B3297F8520006DB564 /* provincialIdHandler.swift */,
 			);
 			path = ImmiCan;
@@ -171,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB669E45298CC8290029FF07 /* Sin.swift in Sources */,
 				049051B1296A771400FCF4E3 /* createAccountViewController.swift in Sources */,
 				04BE9CDE29567FEB0079FBA3 /* ViewController.swift in Sources */,
 				04BE9CDA29567FEB0079FBA3 /* AppDelegate.swift in Sources */,
@@ -180,7 +183,6 @@
 				7A60BF5D2988C68C008FF92D /* Banking.swift in Sources */,
 				04904B44295E955700E8750B /* forgetPassViewcontroller.swift in Sources */,
 				04BE9CDC29567FEB0079FBA3 /* SceneDelegate.swift in Sources */,
-				FB55D663297F9413004B8352 /* Sin.swift in Sources */,
 				040B76B4297F8520006DB564 /* provincialIdHandler.swift in Sources */,
 				049051AF296A752300FCF4E3 /* loginViewController.swift in Sources */,
 			);
