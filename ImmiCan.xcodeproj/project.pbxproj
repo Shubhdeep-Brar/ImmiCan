@@ -17,7 +17,6 @@
 		04BE9CE129567FEB0079FBA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BE9CDF29567FEB0079FBA3 /* Main.storyboard */; };
 		04BE9CE329567FEC0079FBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BE9CE229567FEC0079FBA3 /* Assets.xcassets */; };
 		04BE9CE629567FEC0079FBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BE9CE429567FEC0079FBA3 /* LaunchScreen.storyboard */; };
-		7A0E95572971009300C62C5B /* ViewControllerSelectProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E95562971009300C62C5B /* ViewControllerSelectProvince.swift */; };
 		7A13BB3A297F93E400BA8A0C /* HealthCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13BB39297F93E400BA8A0C /* HealthCare.swift */; };
 		7A13BB3C297F9B1100BA8A0C /* HealthCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13BB3B297F9B1100BA8A0C /* HealthCareViewController.swift */; };
 		7A60BF5D2988C68C008FF92D /* Banking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60BF5C2988C68C008FF92D /* Banking.swift */; };
@@ -37,7 +36,6 @@
 		04BE9CE229567FEC0079FBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BE9CE529567FEC0079FBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BE9CE729567FEC0079FBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A0E95562971009300C62C5B /* ViewControllerSelectProvince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSelectProvince.swift; sourceTree = "<group>"; };
 		7A13BB39297F93E400BA8A0C /* HealthCare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCare.swift; sourceTree = "<group>"; };
 		7A13BB3B297F9B1100BA8A0C /* HealthCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCareViewController.swift; sourceTree = "<group>"; };
 		7A60BF5C2988C68C008FF92D /* Banking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				049051B0296A771400FCF4E3 /* createAccountViewController.swift */,
 				049051AE296A752300FCF4E3 /* loginViewController.swift */,
 				04BE9CE229567FEC0079FBA3 /* Assets.xcassets */,
-				7A0E95562971009300C62C5B /* ViewControllerSelectProvince.swift */,
 				04BE9CE429567FEC0079FBA3 /* LaunchScreen.storyboard */,
 				04BE9CE729567FEC0079FBA3 /* Info.plist */,
 				04904B43295E955700E8750B /* forgetPassViewcontroller.swift */,
@@ -170,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A0E95572971009300C62C5B /* ViewControllerSelectProvince.swift in Sources */,
 				049051B1296A771400FCF4E3 /* createAccountViewController.swift in Sources */,
 				04BE9CDE29567FEB0079FBA3 /* ViewController.swift in Sources */,
 				04BE9CDA29567FEB0079FBA3 /* AppDelegate.swift in Sources */,

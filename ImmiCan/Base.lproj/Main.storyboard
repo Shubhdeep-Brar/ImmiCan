@@ -374,7 +374,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="I5Q-T0-akv" id="ZrA-lR-sVf"/>
                         <outlet property="passwordTextField" destination="hIF-GA-ykx" id="CBl-7u-ZfS"/>
-                        <segue destination="WR4-g5-9zy" kind="show" identifier="goToHomePage" id="7d9-bA-Z3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajf-B4-CDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -444,7 +443,7 @@
                                     <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="NEy-Lc-jaS" kind="show" id="DX7-Zl-1fO"/>
+                                    <segue destination="WR4-g5-9zy" kind="show" id="Int-x1-gbF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,103 +464,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BI-bd-Xc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4512.3076923076924" y="-49.052132701421797"/>
-        </scene>
-        <!--View Controller Select Province-->
-        <scene sceneID="EzR-Hs-mEE">
-            <objects>
-                <viewController id="NEy-Lc-jaS" customClass="ViewControllerSelectProvince" customModule="ImmiCan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kg0-U8-5h6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-wS-hL7">
-                                <rect key="frame" x="33" y="398" width="325" height="218"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-aJ-J9u">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="325" id="XHQ-Ys-H9e"/>
-                                            <constraint firstAttribute="height" constant="48" id="ixc-g5-uxn"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Select Province">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                            <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectProvinceButton:" destination="NEy-Lc-jaS" eventType="touchUpInside" id="Omg-os-NjY"/>
-                                        </connections>
-                                    </button>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NyY-ug-AmG">
-                                        <rect key="frame" x="0.0" y="48" width="325" height="170"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="170" id="Rl6-MW-UJg"/>
-                                        </constraints>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="KBd-Lj-RL4" style="IBUITableViewCellStyleDefault" id="csM-gW-Sjh">
-                                                <rect key="frame" x="0.0" y="50" width="325" height="43.666667938232422"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="csM-gW-Sjh" id="OT1-1t-osJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KBd-Lj-RL4">
-                                                            <rect key="frame" x="20" y="0.0" width="285" height="43.666667938232422"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </tableViewCell>
-                                        </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="NEy-Lc-jaS" id="113-Lc-GLa"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your Province below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVz-OJ-YYz">
-                                <rect key="frame" x="33" y="322" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDU-gp-Dmk">
-                                <rect key="frame" x="191" y="216" width="75" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="cfh-c4-3Fd" kind="show" id="u9P-Io-SmA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="QKt-ga-HkW"/>
-                        <color key="backgroundColor" red="1" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="LqR-wS-hL7" secondAttribute="bottom" constant="228" id="648-hh-eKe"/>
-                            <constraint firstAttribute="trailing" secondItem="LqR-wS-hL7" secondAttribute="trailing" constant="32" id="YLE-cH-jFB"/>
-                            <constraint firstItem="LqR-wS-hL7" firstAttribute="top" secondItem="kg0-U8-5h6" secondAttribute="top" constant="398" id="prt-8L-vUB"/>
-                            <constraint firstItem="LqR-wS-hL7" firstAttribute="leading" secondItem="kg0-U8-5h6" secondAttribute="leading" constant="33" id="sQa-7M-eSZ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Oy4-O6-BQL"/>
-                    <connections>
-                        <outlet property="selectedProvince" destination="ypp-aJ-J9u" id="88f-l6-BLy"/>
-                        <outlet property="tblView" destination="NyY-ug-AmG" id="itF-ht-GXX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="koP-hj-fX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5380" y="-48.341232227488149"/>
         </scene>
         <!--Select Province Picker-->
         <scene sceneID="Ihe-uS-hiG">
@@ -602,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRq-a1-573" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6220" y="-45.497630331753555"/>
+            <point key="canvasLocation" x="5280" y="-49"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="CBe-wL-z1x">
@@ -706,7 +608,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="signUpTapped:" destination="4gD-8u-9hh" eventType="touchUpInside" id="GfI-kh-iqS"/>
-                                                    <segue destination="7J0-Ff-7iB" kind="show" id="Vzu-XI-GsN"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immi Can" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28s-PH-cH5">
@@ -755,12 +656,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlA-pY-0W0">
-                                <rect key="frame" x="160" y="465" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hOT-7e-9hs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -834,9 +729,6 @@ service.</string>
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="f9n-2z-2Z4" kind="show" id="DFu-Hg-8bv"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
